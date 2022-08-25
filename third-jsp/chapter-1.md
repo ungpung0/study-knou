@@ -100,6 +100,106 @@ public class HelloServlet extends HttpServlet {
 <li><b>JSP(Java Server Page)</b></li>
 <p>서블릿을 대체하여 사용할 수 있는 스크립트 언어이다. JSP는 WAS를 통해 자동으로 서블릿으로 변환되고 컴파일된다.</p>
 
+<h2>HTTP(Hypertext Transfer Protocol) 프로토콜</h2><hr/>
+<p>HTTP 프로토콜은 간단하게 설명하면 웹 서버와 클라이언트가 통신할 때 사용하는 일련의 규약이다.<br>요청을 위해서 접속을 해야하며, 서버의 응답 이후에는 클라이언트의 상태를 유지하지 않는다. 덕분에 웹 서버의 부담은 줄어드나, 상태 관리를 위해서 쿠키, 세션이 필요하다.</p>
+
+<li><b>HTTP 요청 및 응답 절차</b></li>
+<p>1. 사용자가 웹 브라우저에 URL 주소를 입력한다.<br>2. DNS(Domain Name System)에 URL의 IP 주소를 요청한다.<br>3. 웹 서버와 TCP 연결을 시도한다.<br>4. 연결을 성공할 시 요청 메시지를 전송한다.(REQUEST)<br>5. 웹 서버가 클라이언트에게 웹 페이지를 전송한다.(RESPONSE)<br>6. 연결을 종료하고 문서를 출력한다.</p>
+
+> <h3>DNS(Domain Name System)</h3>
+> 미리 설정되어있는 URL의 웹 사이트의 주소를 IP 주소로 변환해주는 역할을 하는 시스템이다.
+<br>
+
+> <h3>전송 제어 프로토콜(TCP, Transmission Control Protocol)</h3>
+> 인터넷 환경에서 데이터를 메시지 형태로 전송할 때 사용하는 프로토콜로서 연결형 서비스이다.
+<br>
+
+<li><b>HTTP 요청 메시지 구조</b></li>
+
+```
+// 시작 라인
+GET /index.html HTTP/ 1.1
+
+// 헤더
+Host: www.w3.org
+Referer: http://www.w3.org/hypertext/DataSources/Overview.html
+Accept: image/gif, image/x-xbitmap, image/jpeg...
+Accept-Language: ko
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+Content-Length: 43
+Content-Type: application/x-www-form-urlencoded
+
+// 바디
+Body: -
+```
+
+<p>클라이언트가 서버에 요청할 때 보내는 HTTP Request의 구조는 크게 <b>시작 라인(Starter Line)</b>, <b>요청 헤더(Headers)</b>, <b>요청 몸체(Body)</b>로 이루어진다.<br>시작 라인은 해당 Request의 작동 정보(Action)와 타겟 URI를 담는다.<br>요청 헤더는 해당 Request의 추가적인 정보를 담고 있는 부분으로 후술할 몸체와 마찬가지로 'K:V'의 형태를 하고 있다.<br>몸체는 데이터가 담겨있는 부분으로 위 예의 GET에서는 의미가 없으며, 데이터를 폼 형태로 전달하는 POST에서 사용한다. 
+</p>
+
+<li><b>HTTP 응답 메시지 구조</b></li>
+
+```
+// 시작 라인
+HTTP/1.1 200 OK
+
+// 헤더
+Date: Mon, 23 May 2005 22:38:34 GMT
+Server: Apache/1.3.3.7(Unix)(Red-Hat/Linux)
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+ETag: "3f80f-1b6-3e1cb03b"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 131
+Accept-Ranges: bytes
+Connection: close
+
+// 바디
+<html>
+<head>
+    <title>An Example Page</title>
+</head>
+<body>
+    Hello World, this is a very simple HTML document.
+</body>
+</html>
+```
+
+<p>응답 메시지는 요청 메시지와 같이 시작 라인, 응답 헤더, 응답 몸체로 이루어진다.<br>시작 라인은 Response의 상태를 간략하게 보여주는 부분으로 HTTP 버젼과 상태 코드(Status Code), 상태 텍스트(Status Text)가 있다.<br>응답 헤더는 요청 헤더와 같은 방식으로 동작한다.<br>응답 몸체도 마찬가지로 같은 방식으로 동작한다.</p>
+
+> <h3>상태 코드(Status Code)</h3>
+> <table>
+>   <th>코드명</th>
+>   <th>내용 설명</th>
+>   <tr>
+>       <td>200 OK</td>
+>       <td>클라이언트 요청 성공.</td>
+>   </tr>
+>   <tr>
+>       <td>400 Bad Request</td>
+>       <td>잘못된 요청.</td>
+>   </tr>
+>       <td>401 Unauthorized</td>
+>       <td>인증 오류.</td>
+>   <tr>
+>       <td>403 Forbidden</td>
+>       <td>사용자 허가 모드 오류.</td>
+>   </tr>
+>   <tr>
+>       <td>404 Not Found</td>
+>       <td>요청한 문서 없음.</td>
+>   </tr>
+>   <tr>
+>       <td>405 Method Not Allowed</td>
+>       <td>요청한 방식 지원하지 않음.</td>
+>   </tr>
+>   <tr>
+>       <td>500 Internal Server Error</td>
+>       <td>서버에서 실행 오류 발생.</td>
+>   </tr>
+>   <tr>
+>       <td>503 Server Unavailable</td>
+>       <td>일시적으로 요청 처리 불가.</td>
+>   </tr>
+> </table>
 
 <!-- CSS -->
 <style>
