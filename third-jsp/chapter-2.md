@@ -6,4 +6,4 @@
 <p>JDK의 종류로는 표준적인 프로그램 개발에 사용하는 <b>Java SE(Standard Edition)</b>, WAS에서 동작하는 기능을 추가한 <b>Java EE(Enterprise Edition)</b>, 모바일 등의 제약된 환경에서 동작하는 기능을 추가한 <b>Java ME(Micro Edition)</b>이 있다.</p>
 
 > <h3>JRE(Java Runtime Environment)</h3>
-> 
+> <p></p>
