@@ -1,6 +1,8 @@
 # idea 폴더 제외.
 .idea/
-# xml 파일 제외.
-*.xml
 # img 폴더 제외.
 img/
+# xml 파일 제외.
+*.xml
+# iml 파일 제외.
+*.iml
