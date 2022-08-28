@@ -82,7 +82,7 @@
 <h2>JSP 프로젝트 시작</h2>
 <p>IntelliJ 기준 JSP 프로젝트의 개발 순서를 크게 나누면 다음과 같다.</p>
 
-<li><b>새로운 프로젝트 생성</b></li>
+<li><b>3. 새로운 프로젝트 생성</b></li>
 <p><b>New Project</b> 탭에 들어간 후, <b>Name</b>에 프로젝트명을 기입하고 <b>Create</b>한다.</p>  
 <img src="https://user-images.githubusercontent.com/90200010/187019676-dc8c9579-81bc-4800-8d87-09a29daa6475.PNG" width="600">
 <p><b>Add Framework Support</b> 메뉴에서 <b>Web Application</b>을 <b>Import</b>한다.</p>
