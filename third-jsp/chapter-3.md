@@ -139,7 +139,7 @@
 >   </tr>
 >   <tr>
 >       <td>Functions</td>
->       <td><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %></td>
+>       <td><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %><br>※ fn 태그는 EL과 함께 사용한다.</td>
 >   </tr>
 > </table>
 
