@@ -16,6 +16,11 @@
     <a href="Chapter-2/scriptingElementsEx.jsp">scriptingElementsEX</a><br/>
     <a href="Chapter-2/directivesEx.jsp">directivesEx</a><br/>
     <a href="Chapter-2/directivesEx1.jsp">directivesEx1</a><br/>
-    <a href="Chapter-2/directivesEx2.jsp">directivesEx2</a>
+    <a href="Chapter-2/directivesEx2.jsp">directivesEx2</a><br/>
+    <a href="Chapter-2/requestPageEx.jsp">requestPageEx</a><br/>
+    <a href="Chapter-2/responsePageEx.jsp">responsePageEx</a><br/>
+    <a href="Chapter-2/responsePageEx1.jsp">responsePageEx1</a><hr/>
+    <li>Chapter 3</li>
+    <a href="Chapter-3/requestPageEx.jsp">requestPageEx</a>
   </body>
 </html>
