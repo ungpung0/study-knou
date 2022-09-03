@@ -43,11 +43,6 @@
 <li><b>page</b></li>
 <p>page 지시어는 웹 컨테이너의 처리 방식에 필요한 속성을 기술하는 부분으로 보통 JSP의 맨 상단에 위치하고 있다.</p>
 
-```
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*" %>
-```
-
 > <h3>page 지시어의 속성</h3>
 > <table>
 >   <th>속성</th>

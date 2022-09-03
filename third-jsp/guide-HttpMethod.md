@@ -33,17 +33,3 @@
         <td>클라이언트가 서버의 특정 데이터를 삭제하기 위해서 사용하는 전송 방식이다.<br>삭제에는 값이 필요하지 않으므로, HTTP 바디를 사용하지 않는다. <b>==DELETE</b></td>
     </tr>
 </table>
-
-```json
-
-```
-
-<table>
-    <th>Scope</th>
-    <th>Desc</th>
-    <tr>
-        <td>page</td>
-        <td>클라이언트의 요청에 따라서 <b>page</b></td>
-    </tr>
-</table>
-

@@ -102,18 +102,30 @@
     <th>Desc</th>
     <tr>
         <td>c:set</td>
-        <td>변수를 생성하고 값을 저장하는 태그이다.<br>(예) c:set var="변수명" value="초기값"</td>
+        <td>변수를 생성하고 값을 저장하는 태그이다.<br>(예) &lt;c:set var="변수명" value="초기값"/&gt;</td>
     </tr>
     <tr>
         <td>c:remove</td>
-        <td>변수를 제거할 때 사용하는 태그이다.<br>(예) c:remove var="변수명" scope="범위"</td>
+        <td>변수를 제거할 때 사용하는 태그이다.<br>(예) &lt;c:remove var="변수명" scope="범위"/&gt;</td>
     </tr>
     <tr>
         <td>c:out</td>
-        <td>데이터를 출력할 때 사용하는 태그이다.<br>(예) c:out value="데이터" default="초깃값" escapeXml="true"</td>
+        <td>데이터를 출력할 때 사용하는 태그이다.<br>(예) &lt;c:out value="데이터" default="초깃값" escapeXml="true"/&gt;</td>
     </tr>
     <tr>
         <td>c:if</td>
-        <td></td>
+        <td>Java의 if문과 비슷한 역할을 하는 태그이다. else 문은 존재하지 않으며 조건식은 test 속성값에 입력한다.<br>(예) &lt;c:if test="조건식"/&gt;</td>
+    </tr>
+    <tr>
+        <td>c:choose</td>
+        <td>Java의 switch-case문과 비슷한 역할을 하는 태그이다. c:when, c:otherwise와 함께 사용된다.<br>(예) 예제 참고</td>
+    </tr>
+    <tr>
+        <td>c:forEach</td>
+        <td>Java의 for문, for-in문과 같은 역할을 하는 태그이다.<br>(예) 예제 참고</td>
+    </tr>
+    <tr>
+        <td>c:forTokens</td>
+        <td>문자열을 구분자를 사용하여 분리하고 반복처리 한다.</td>
     </tr>
 </table>
