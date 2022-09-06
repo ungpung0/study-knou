@@ -6,3 +6,11 @@ img/
 *.xml
 # iml 파일 제외.
 *.iml
+
+# visual studio 2022 폴더 & 파일 제외.
+.vs/
+x64/
+*.sln
+*.vcxproj
+*.filters
+*.user
