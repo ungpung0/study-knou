@@ -133,22 +133,3 @@
 <p>상단의 <b>File>Project Structure</b>에서 <b>Web Application: Archive</b>를 추가한다.</p>
 <img src="https://user-images.githubusercontent.com/90200010/187021903-54e39685-f5a9-4943-8053-139b57260855.png" width="600">
 <p><b>Build>Build Artifacts...</b>으로 War 파일로 압축한다.</p>
-
-
-
-
-
-<!-- CSS -->
-<style>
-    h2 {
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    h3 {
-        font-weight: bolder;
-    }
-    img {
-        display: block;
-        margin: 0px auto;
-    }
-</style>
