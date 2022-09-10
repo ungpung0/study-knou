@@ -1,11 +1,13 @@
-# idea 폴더 제외.
+# intellj 폴더 & 파일 제외.
 .idea/
+*.iml
+out/
+
 # img 폴더 제외.
 img/
+
 # xml 파일 제외.
 *.xml
-# iml 파일 제외.
-*.iml
 
 # visual studio 2022 폴더 & 파일 제외.
 .vs/
