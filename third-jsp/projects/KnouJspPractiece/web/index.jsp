@@ -22,5 +22,9 @@
     <a href="Chapter-2/responsePageEx1.jsp">responsePageEx1</a><hr/>
     <li>Chapter 3</li>
     <a href="Chapter-3/requestPageEx.jsp">requestPageEx</a>
+    <li>Cookie</li>
+    <a href="CookiePages/loginMain.jsp">LoginMain</a>
+    <li>Session</li>
+    <a href="SessionPages/loginMain.jsp">LoginMain</a>
   </body>
 </html>
