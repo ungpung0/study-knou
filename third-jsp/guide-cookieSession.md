@@ -144,10 +144,72 @@
     </tr>
     <tr>
         <td>isRequestedSessionIdValid()</td>
-        <td>요청한 세션 ID가 유효 여부를 반환한다.</td>
+        <td>요청한 클라이언트 세션 ID 유효 여부를 반환한다.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>getRequestedSessionID()</td>
+        <td>요청한 클라이언트의 세션 ID를 문자열로 반환한다.</td>
+    </tr>
+    <tr>
+        <td>setMaxInactiveInterval()</td>
+        <td>세션 유효 시간을 초 단위로 설정한다.</td>
+    </tr>
+    <tr>
+        <td>getMaxInactiveInterval()</td>
+        <td>설정한 세션 유효 시간을 반환한다.</td>
+    </tr>
+    <tr>
+        <td>setAttribute()</td>
+        <td>세션에 데이터를 저장한다.</td>
+    </tr>
+    <tr>
+        <td>getAttribute()</td>
+        <td>세션에서 데이터를 불러온다.</td>
+    </tr>
+    <tr>
+        <td>getAttributeNames()</td>
+        <td>세션의 모든 데이터명을 배열로 불러온다.</td>
+    </tr>
+    <tr>
+        <td>isNew()</td>
+        <td>세션이 최초 생성되었는지 여부를 판단한다.</td>
+    </tr>
+    <tr>
+        <td>removeAttribute()</td>
+        <td>세션의 특정 데이터를 삭제한다.</td>
+    </tr>
+    <tr>
+        <td>invalidate()</td>
+        <td>세션의 데이터를 삭제한다.</td>
+    </tr>
+    <tr>
+        <td>getValue()</td>
+        <td>세션의 객체값을 반환한다.</td>
+    </tr>
+    <tr>
+        <td>putValue()</td>
+        <td>세션에 기존 객체를 연결한다.</td>
+    </tr>
+    <tr>
+        <td>removeValue()</td>
+        <td>세션의 객체의 연결을 제거한다.</td>
     </tr>
 </table>
+
+```jsp
+<%
+    // 세션 생성 예제.
+    HttpSession httpSession = request.getSession(true); // true : 세션이 없을 경우, 생성한다.
+    httpSession.setAttribute("session_id", "admin");
+%>
+```
+
+```jsp
+<%
+    // 세션 삭제 예제.
+    HttpSession httpSession = request.getSession(false);
+    if(httpSession != null) {
+        httpSession.invalidate();
+    } 
+%>
+```
