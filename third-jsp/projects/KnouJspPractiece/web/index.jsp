@@ -26,5 +26,7 @@
     <a href="CookiePages/loginMain.jsp">LoginMain</a>
     <li>Session</li>
     <a href="SessionPages/loginMain.jsp">LoginMain</a>
+    <li>Bean</li>
+    <a href="BeanPages/writePage.jsp">WritePage</a>
   </body>
 </html>
