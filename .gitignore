@@ -2,12 +2,16 @@
 .idea/
 *.iml
 out/
+*.gradle
 
 # img 폴더 제외.
 img/
 
 # xml 파일 제외.
 *.xml
+
+# 빌드 파일 제외.
+*.class
 
 # visual studio 2022 폴더 & 파일 제외.
 .vs/
